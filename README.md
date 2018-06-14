@@ -1,6 +1,6 @@
 # Light Blog
 
-A full-stack personal blog application built on Mongodb, Node.js, React and Redux. You can write a new awesome articles, edit or delete it.
+A blog full stack application built on Mongodb, Node.js, React and Redux. You can write a new article, edit or delete.
 
 ## Getting Started
 
@@ -11,6 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Node v8.11.1 ([Here](https://nodejs.org/en/))
 - Nodemon v1.17.5 ([Here](https://nodemon.io/))
 - Git v2.17.0 ([Here](https://git-scm.com/downloads/))
+- MongoDB v3.6 ([Here](https://www.mongodb.com/))
 
 ## Installing
 
@@ -58,6 +59,8 @@ npm start
 - [React](https://reactjs.org/)
 - [Redux](https://redux.js.org/)
 - [MongoDB](https://www.mongodb.com/)
+- [Express](https://expressjs.com/)
+- [SASS](https://sass-lang.com/)
 
 ## Authors
 
