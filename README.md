@@ -1,6 +1,6 @@
 # Light Blog
 
-A blog full stack application built on Mongodb, Node.js, React and Redux. You can write a new article, edit or delete.
+A full-stack personal blog application built on Mongodb, Node.js, React and Redux. You can write a new awesome article, edit or delete it!
 
 ## Getting Started
 
