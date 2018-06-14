@@ -5,11 +5,9 @@ const session = require('express-session')
 const cors = require('cors')
 const errorHandler = require('errorhandler')
 const mongoose = require('mongoose')
-
 mongoose.promise = global.Promise
 
 const isProduction = process.env.NODE_ENV === 'production'
-
 const app = express()
 
 app.use(cors())
@@ -30,19 +28,22 @@ if (!isProduction) {
   app.use(errorHandler())
 }
 
-mongoose.connect('mongodb://localhost/lightblog', function(err) {
-  if (err) {
-    console.log('Error: ' + err)
-  } else {
-    console.log('Connected!')
+mongoose.connect(
+  'mongodb://localhost/lightblog',
+  function(err) {
+    if (err) {
+      console.log('Error: ' + err)
+    } else {
+      console.log('Connected!')
+    }
   }
-})
+)
 mongoose.set('debug', true)
 
-// add models
+// Models
 require('./models/Articles')
 require('./models/Comments')
-// add routes
+// Routes
 app.use(require('./routes'))
 
 app.use((req, res, next) => {
@@ -63,5 +64,5 @@ app.use((err, req, res) => {
 })
 
 const server = app.listen(8000, () =>
-  console.log('Server started on http://localhost:8000')
+  console.log('Server started on http://localhost:8000! :)')
 )

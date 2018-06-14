@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import Form from '../Article/Form'
 import Article from './Article'
+import './style.css'
 
 class Home extends React.Component {
   constructor(props) {
@@ -25,12 +26,12 @@ class Home extends React.Component {
       <div className="container">
         <div className="row pt-5">
           <div className="col-12 col-lg-6 offset-lg-3">
-            <h1 className="text-center">Light Blog</h1>
+            <h1 className="text-center title-text">Light Blog</h1>
           </div>
           <Form />
         </div>
         <div className="row pt-5">
-          <div className="col-12 col-lg-6 offfset-lg-3">
+          <div className="col-12 col-lg-12 offfset-lg-3">
             {articles.map(article => {
               return (
                 <div key={article._id}>

@@ -63,7 +63,7 @@ class Form extends React.Component {
     const { title, body, author } = this.props
 
     return (
-      <div className="col-12 col-lg-6, offset-lg-3">
+      <div className="col-12 col-lg-8,">
         <input
           onChange={event => this.handleChangeField('title', event)}
           value={title}
@@ -74,7 +74,8 @@ class Form extends React.Component {
           onChange={event => this.handleChangeField('body', event)}
           value={body}
           className="form-control my-3"
-          placeholder="Article Discription"
+          rows="12"
+          placeholder="Write your awesome article here :)"
         />
 
         <input
